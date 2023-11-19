@@ -1,0 +1,22 @@
+{
+  "name": "diverseenvironments_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:test": "cross-env test_env=test npx playwright test",
+    "test:development": "cross-env test_env=development npx playwright test",
+    "test:production": "cross-env test_env=production npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.2",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
